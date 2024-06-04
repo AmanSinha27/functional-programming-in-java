@@ -1,0 +1,2 @@
+* Functional programming is less tedious because we don't have to worry about looping over the list
+* We are getting the numbers not as a List but as a stream and we can perform any operation on each number of the stream
