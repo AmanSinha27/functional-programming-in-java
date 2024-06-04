@@ -13,7 +13,9 @@ public class FP01Functional {
     public static void printNumbersFunctional(List<Integer> numbers){
         /**
          * numbers.stream().forEach(FP01Functional::printNumber); 
-         * Syntax for method reference => Here we have the className and its static method printNumber
+         * Above syntax is called method reference => Here we have the className and its static method printNumber
+         * For using stream() method, our method needs to be static, so that we can call it directly on the class
+         * Without stream, we will get a list of numbers but stream() changes it to a stream
          */
         
         numbers.stream().forEach(System.out::println); 
@@ -22,7 +24,12 @@ public class FP01Functional {
         */
     }
 
-    public static void printNumber(int number) {
+    /**
+     * Wew don't actually need the below method.
+     * It was used for just explaining the syntax for using stream()
+     * @param number
+     */
+    /* public static void printNumber(int number) {
         System.out.println(number);
-    }
+    } */
 }
