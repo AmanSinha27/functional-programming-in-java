@@ -5,12 +5,13 @@ import java.util.List;
 
 public class Exercises {
     public static void main(String[] args){
-        List<String> courses = Arrays.asList("Spring", "Spring boot", "API", "Microservices", "AWS", "PCF", "Azure", "Docker", "Kubernetes");
+        // List<String> courses = Arrays.asList("Spring", "Spring boot", "API", "Microservices", "AWS", "PCF", "Azure", "Docker", "Kubernetes");
         // printCourses(courses);
-        printLengthOfStrings(courses);
+        // printLengthOfStrings(courses);
 
-        // List<Integer> numbers = Arrays.asList(1,3,12,13,5, 7, 9, 11, 18);
+        List<Integer> numbers = Arrays.asList(1,3,12,13,5, 7, 9, 11, 18);
         // printSquareOfNumbers(numbers);
+        printCubeOfOddNumbers(numbers);
 
     }
 
@@ -39,6 +40,13 @@ public class Exercises {
     public static void printLengthOfStrings(List<String> courses) {
         courses.stream()
             .map(course->course + " " + course.length())
+            .forEach(System.out::println);
+    }
+
+    public static void printCubeOfOddNumbers(List<Integer> numbers) {
+        numbers.stream()
+            .filter(number->number%2!=0)
+            .map(number->number + "'s cube: " + number*number*number)
             .forEach(System.out::println);
     }
 }
