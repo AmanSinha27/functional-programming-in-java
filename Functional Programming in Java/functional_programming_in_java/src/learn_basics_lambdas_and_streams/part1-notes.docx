@@ -1,2 +1,9 @@
 * Functional programming is less tedious because we don't have to worry about looping over the list
 * We are getting the numbers not as a List but as a stream and we can perform any operation on each number of the stream
+* Exercises for practice
+    * Print all odd numbers from the list
+    * Print all courses individually:
+        List.of("Spring", "Spring boot", "API", "Microservices", "AWS", "PCF", "Azure", "Docker", "Kubernetes")
+
+    * Print courses containing the word "Spring"
+    * Print courses whose name has atleast 4 letters
