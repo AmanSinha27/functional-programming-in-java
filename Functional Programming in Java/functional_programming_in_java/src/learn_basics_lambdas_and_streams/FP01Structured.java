@@ -1,10 +1,11 @@
 package learn_basics_lambdas_and_streams;
 
+import java.util.Arrays;
 import java.util.List;
 
 public class FP01Structured {
     public static void main(String[] args){
-        List<Integer> numbers = List.of(12,32,543,32,51,78,31,98,52);
+        List<Integer> numbers = Arrays.asList(12,32,43,21,78,65,42,90,87);
         printNumbersStructured(numbers);
 
     }
