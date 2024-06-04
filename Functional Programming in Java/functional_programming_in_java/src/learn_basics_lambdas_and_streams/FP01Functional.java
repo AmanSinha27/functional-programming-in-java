@@ -41,6 +41,9 @@ public class FP01Functional {
             .forEach(System.out::println);
     }
 
+    /* 
+     * Not required in case of lambda expressions
+     */
     public static boolean isEven(int number){
         return number%2==0;
     }
