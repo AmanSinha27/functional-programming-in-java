@@ -36,7 +36,8 @@ public class FP01Functional {
 
     public static void printEvenNumbersFunctional(List<Integer> numbers){
         numbers.stream()
-            .filter(FP01Functional::isEven) //filter() filters based on boolean returned by isEven() method
+            // .filter(FP01Functional::isEven) //filter() filters based on boolean returned by isEven() method
+            .filter(number->isEven(number)) //Lambda expression: similar to arrow function of JS
             .forEach(System.out::println);
     }
 
